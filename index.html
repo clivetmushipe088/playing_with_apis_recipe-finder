@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    
+    <!--This is a link to the styling-->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <!--Page section for the searching and user interaction-->
         <h1>Weather Forecast</h1>
         <div class="search-section">
+            <!--search section and section for user input-->
             <input type="text" id="cityInput" placeholder="Enter city (e.g., London)">
-            <button onclick="getWeather()">Search</button>
+            <button onclick="findWeather()">Search</button>
         </div>
+        <!--Weather dispaly section: content will depend on user input-->
         <div id="weatherResult" class="weather-card"></div>
     </div>
+    <!--javascript files connected-->
     <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
