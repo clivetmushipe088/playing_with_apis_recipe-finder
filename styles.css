@@ -1,21 +1,25 @@
+/* Base styles for the entire page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: #f0f0f0;
+    background: #f0f0f0; /* Light gray background */
 }
 
+/* Container to center content and set max width */
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center horizontally */
 }
 
+/* Search section layout using flexbox */
 .search-section {
     margin-bottom: 20px;
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Space between input and button */
 }
 
+/* Style inputs and button */
 input, button {
     padding: 10px;
     font-size: 16px;
@@ -24,18 +28,49 @@ input, button {
 }
 
 button {
-    background: #4CAF50;
+    background: #4CAF50; /* Green color */
     color: white;
     cursor: pointer;
+    border: none;
 }
 
+/* Hover effect for button */
+button:hover {
+    background: #45a049;
+}
+
+/* Weather card styling for results */
 .weather-card {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
+/* Align weather icon with text */
 .weather-card img {
-    vertical-align: middle;
+    vertical-align: middle; /* Align icon with text */
+}
+
+/* Loading and error message styles */
+.loading, .error {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.loading {
+    background: #e3f2fd; /* Light blue background */
+}
+
+.error {
+    background: #ffebee; /* Light red background */
+    color: #d32f2f;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .search-section {
+        flex-direction: column; /* Stack input/button vertically on small screens */
+    }
 }
