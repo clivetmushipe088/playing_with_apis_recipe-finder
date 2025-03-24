@@ -15,6 +15,9 @@ A web application that displays current weather data for any city using the [Ope
 
 ## How to Run Locally
 
+## demo video link 
+https://drive.google.com/file/d/1ERz7ELZn-cAorY2Aub8Gnqzb2RW8Uumv/view?usp=sharing
+
 ### Prerequisites
 - A modern web browser.
 - An OpenWeatherMap API key ([sign up here](https://openweathermap.org/api)).
